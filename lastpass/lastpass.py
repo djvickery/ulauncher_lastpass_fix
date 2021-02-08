@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 class Lastpass:
     """ Class that interacts with LastPass CLI """
     def get_passwords(self, query):
-        cmd = "lpass show -G %s --json" % query
+        cmd = "lpass show -G"
 
         result = self.lpass(cmd)
 
